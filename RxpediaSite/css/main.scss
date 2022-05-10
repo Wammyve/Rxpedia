@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+:root{
+    --primary-gradient: linear-gradient(#b400a5, #88007d);
+    --primary-text-color: rgb(0, 0, 0);
+}
+
+*{
+    margin: 0;
+    font-family: Arial;
+    font-size: 30px;
+}
+
+var {
+    font-style: normal;
+  }
+
+body {
+    background: #cfcfcf;
+}
+
+.navbar {
+    background-color: #b400a5; /* For browsers that do not support gradients */
+    background-image: var(--primary-gradient); 
+    padding: 1em;
+    font-size: 15px;
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        font-family: 'Fredoka One';
+        font-size: 1.5em;
+    }
+
+    span {
+        color: rgb(255, 255, 255);
+        font-family: 'Fredoka One';
+        font-size: 0.66em;
+    }
+
+    .search {
+        float: right;
+        border: none;
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 30px;
+        padding: 0.25em 20px;
+
+        input {
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    .searchbar {
+        float: right;
+        border: none;
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 30px;
+        padding: 0.25em 20px;
+    }
+    
+}
+
+.hero {
+    padding: 1em 2em;
+
+    .title {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    #drug {
+        font-size: 1.2em;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #drugImage {
+        max-height: 10em;
+    }
+
+    .druglink {
+        color: var(--primary-text-color);
+    }
+
+    .faqlist {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 0px 0px 1em 0px;
+
+            p {
+                font-size: auto;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .contactlist {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+
+        li {
+            margin: 0px 0px 1em 0px;
+        }
+
+        a {
+            color: var(--primary-text-color);
+        }
+    }
+
+    .searchlist {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+        
+        li {
+            margin: 0px 0px 1em 0px;
+        }
+        a {
+            color: var(--primary-text-color);
+        }
+    }
+    
+}
+
+.bottom {
+    background: #00093b;
+    color: white;
+    margin-top: 1em;
+    padding-bottom: 3em;
+
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 1.25em;
+    }
+    .bottomMenu {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        font-weight: bold;
+        padding: 0em 20em;
+        margin-top: 1em;
+        
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

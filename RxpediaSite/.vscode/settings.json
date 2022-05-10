@@ -1,0 +1,4 @@
+{
+    "discord.detailsEditing": "Editing \"{file_name}\" on line {current_line} of {total_lines}",
+    "discord.detailsIdling": "Idling in space"
+}

@@ -1,2 +1,3 @@
 This project uses SCSS to style the website components, and is then translated into regular CSS via VS Code.
 When editing using VS Code, changes should be made via the SCSS file for convenience. VS Code will then translate it into regular CSS via an extension.
+When comitting however, please remember to update all files here!

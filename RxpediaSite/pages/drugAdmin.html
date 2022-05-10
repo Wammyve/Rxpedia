@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        <script src="../scripts/jquery-3.6.0.min.js"></script>
+        <script src="../scripts/fetch.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <title>Rxpedia</title>
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <div class="cointainer">
+                <a class="logo" href="index.html"> R<span>x</span>pedia</a>
+                <input type="text" class="searchbar" id="search" autocomplete="off" onkeydown="search(event, this)" placeholder="Search for Rx" name="query">
+            </div>
+        </div>
+        
+        <section class="hero">
+            <h1 id="drug">Drug: </h1>
+            <p class="subheading" id="drugBrand">Brand Type: </p>
+            <img id="drugImage" src="..\images\" alt="Image of Drug">
+            <p id="drugUse">Usage: </p>
+            <p id="drugDesc">Desc:</p>
+        </section>
+
+    </body>
+
+    <script>
+        $( function() {
+          var availableTags = [
+            "Acetaminophen",
+            "Adderall",
+            "Amphentamine Salts",
+            "Atorvastatin",
+            "Lipitor",
+            "Phenergan",
+            "Promethazine",
+            "Tylenol",
+          ];
+          $( "#search" ).autocomplete({
+            source: availableTags
+          });
+        } );
+    </script>
+</html>
